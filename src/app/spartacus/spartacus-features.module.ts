@@ -14,7 +14,6 @@ import { CartQuickOrderFeatureModule } from './features/cart/cart-quick-order-fe
 import { CartImportExportFeatureModule } from './features/cart/cart-import-export-feature.module';
 import { AsmFeatureModule } from './features/asm/asm-feature.module';
 import { MinicartModule } from './cart/minicart/minicart.module';
-import { BootcampOutletsModule } from '../outlets/outlets.module';
 
 @NgModule({
   declarations: [],
@@ -99,7 +98,7 @@ import { BootcampOutletsModule } from '../outlets/outlets.module';
     SearchBoxModule,
     PageSlotModule,
     IconModule,
-    UrlModule
+    UrlModule,
   ]
 })
 export class SpartacusFeaturesModule { }

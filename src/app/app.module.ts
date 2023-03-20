@@ -9,7 +9,7 @@ import { IconModule, MiniCartModule, SearchBoxModule } from "@spartacus/storefro
 import { OutletPosition, PageSlotModule } from "@spartacus/storefront/cms-structure";
 import { GenericLinkModule } from "@spartacus/storefront/shared";
 import { AppComponent } from './app.component';
-import { BootcampOutletsModule } from "./outlets/outlets.module";
+
 import { SpartacusModule } from './spartacus/spartacus.module';
 
 @NgModule({
@@ -23,7 +23,6 @@ import { SpartacusModule } from './spartacus/spartacus.module';
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     SpartacusModule,
-    BootcampOutletsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

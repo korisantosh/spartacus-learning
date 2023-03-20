@@ -15,7 +15,7 @@ import { LayoutConfig } from '@spartacus/storefront/layout';
     provideConfig(<OccConfig>{
       backend: {
         occ: {
-          baseUrl: 'https://spartacus-demo.eastus.cloudapp.azure.com:8443/',
+          baseUrl: 'https://ec2-43-205-75-181.ap-south-1.compute.amazonaws.com:9002/',
         }
       },
     }),
@@ -23,7 +23,7 @@ import { LayoutConfig } from '@spartacus/storefront/layout';
       context: {
         currency: ['USD'],
         language: ['en'],
-        baseSite: ['electronics-spa'],
+        baseSite: ['olm-spa'],
       },
     }),
     provideConfig(<I18nConfig>{
