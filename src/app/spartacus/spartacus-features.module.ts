@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { AnonymousConsentsModule, AuthModule, CartModule, CartOccModule, CostCenterOccModule, ExternalRoutesModule, OrderOccModule, ProductModule, ProductOccModule, UserOccTransitional_4_2_Module, UserTransitional_4_2_Module } from "@spartacus/core";
-import { AddressBookModule, AnonymousConsentManagementBannerModule, AnonymousConsentsDialogModule, BannerCarouselModule, BannerModule, BreadcrumbModule, CartComponentModule, CartPageEventModule, CategoryNavigationModule, CmsParagraphModule, ConsentManagementModule, FooterNavigationModule, HamburgerMenuModule, HomePageEventModule, LinkModule, LoginRouteModule, LogoutModule, MyCouponsModule, MyInterestsModule, NavigationEventModule, NavigationModule, NotificationPreferenceModule, PaymentMethodsModule, ProductCarouselModule, ProductDetailsPageModule, ProductFacetNavigationModule, ProductImagesModule, ProductIntroModule, ProductListingPageModule, ProductListModule, ProductPageEventModule, ProductReferencesModule, ProductSummaryModule, ProductTabsModule, SearchBoxModule, SiteContextSelectorModule, StockNotificationModule, TabParagraphContainerModule, WishListModule } from "@spartacus/storefront";
+import { AnonymousConsentsModule, AuthModule, CartModule, CartOccModule, CostCenterOccModule, ExternalRoutesModule, OrderOccModule, ProductModule, ProductOccModule, UrlModule, UserOccTransitional_4_2_Module, UserTransitional_4_2_Module } from "@spartacus/core";
+import { AddressBookModule, AnonymousConsentManagementBannerModule, AnonymousConsentsDialogModule, BannerCarouselModule, BannerModule, BreadcrumbModule, CartComponentModule, CartPageEventModule, CategoryNavigationModule, CmsParagraphModule, ConsentManagementModule, FooterNavigationModule, GenericLinkModule, HamburgerMenuModule, HomePageEventModule, IconModule, LinkModule, LoginRouteModule, LogoutModule, MyCouponsModule, MyInterestsModule, NavigationEventModule, NavigationModule, NotificationPreferenceModule, PageSlotModule, PaymentMethodsModule, ProductCarouselModule, ProductDetailsPageModule, ProductFacetNavigationModule, ProductImagesModule, ProductIntroModule, ProductListingPageModule, ProductListModule, ProductPageEventModule, ProductReferencesModule, ProductSummaryModule, ProductTabsModule, SearchBoxModule, SiteContextSelectorModule, StockNotificationModule, TabParagraphContainerModule, WishListModule } from "@spartacus/storefront";
 import { UserFeatureModule } from './features/user/user-feature.module';
 import { PersonalizationFeatureModule } from './features/tracking/personalization-feature.module';
 import { StoreFinderFeatureModule } from './features/storefinder/store-finder-feature.module';
@@ -14,6 +14,7 @@ import { CartQuickOrderFeatureModule } from './features/cart/cart-quick-order-fe
 import { CartImportExportFeatureModule } from './features/cart/cart-import-export-feature.module';
 import { AsmFeatureModule } from './features/asm/asm-feature.module';
 import { MinicartModule } from './cart/minicart/minicart.module';
+import { BootcampOutletsModule } from '../outlets/outlets.module';
 
 @NgModule({
   declarations: [],
@@ -93,7 +94,12 @@ import { MinicartModule } from './cart/minicart/minicart.module';
     CartQuickOrderFeatureModule,
     CartImportExportFeatureModule,
     AsmFeatureModule,
-    MinicartModule
+    MinicartModule,
+    GenericLinkModule,
+    SearchBoxModule,
+    PageSlotModule,
+    IconModule,
+    UrlModule
   ]
 })
 export class SpartacusFeaturesModule { }

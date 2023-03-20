@@ -5,3 +5,7 @@ $styleVersion: 4.3;
 $skipComponentStyles: (cx-mini-cart);
 
 @import '~@spartacus/styles/index';
+
+header .SiteLogo {
+    width: 170px;
+}

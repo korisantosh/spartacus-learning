@@ -3,8 +3,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { EffectsModule } from "@ngrx/effects";
 import { StoreModule } from "@ngrx/store";
+import { UrlModule } from "@spartacus/core";
 import { AppRoutingModule } from "@spartacus/storefront";
+import { IconModule, MiniCartModule, SearchBoxModule } from "@spartacus/storefront/cms-components";
+import { OutletPosition, PageSlotModule } from "@spartacus/storefront/cms-structure";
+import { GenericLinkModule } from "@spartacus/storefront/shared";
 import { AppComponent } from './app.component';
+import { BootcampOutletsModule } from "./outlets/outlets.module";
 import { SpartacusModule } from './spartacus/spartacus.module';
 
 @NgModule({
@@ -17,7 +22,8 @@ import { SpartacusModule } from './spartacus/spartacus.module';
     AppRoutingModule,
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
-    SpartacusModule
+    SpartacusModule,
+    BootcampOutletsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
